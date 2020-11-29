@@ -11,7 +11,7 @@ img {
   height: auto;
 }
 
-img.rounded {
+img {
   border-radius: 8px;
 }
 
@@ -242,7 +242,7 @@ img {
 
 
 
-img.rounded {
+img {
   border-radius: 2rem;
 }
 
