@@ -1,4 +1,4 @@
-/* General CSS Styles */
+/* initial CSS code */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
 
 body {
@@ -96,7 +96,7 @@ header nav ul li a:hover {
   color: #4cdf27;
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 800px) {
   header {
     display: flex;
     justify-content: space-between;

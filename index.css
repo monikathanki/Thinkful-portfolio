@@ -1,7 +1,5 @@
-/* Mobile-first & Tablet Layout */
-
-@media all and (min-width: 320px) {
-
+@media screen and (min-width: 480px) {
+  
   :root {
     font-size: 14px;
   }
@@ -25,7 +23,7 @@
     align-items: center;
   }
 
-  .nav-name {
+   .nav-name {
     color: white;
     font-family: 'Notable', sans-serif;
     font-size: 3rem;
@@ -69,13 +67,13 @@
   /* Wrapper */
 
   .wrapper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
 
   /* Home Section / Intro */
@@ -129,8 +127,8 @@
   }
 
   #about .wrapper {
-    background: linear-gradient(to right,#65aa54, #376e29);
-  }
+     background: linear-gradient(to right,#65aa54, #376e29);
+   }
 
   #about p {
     color: white;
@@ -158,10 +156,10 @@
     border-radius: 2rem;
   }
 
-  /* Portfolio Section */
+   /* Portfolio Section */
 
   #portfolio .wrapper {
-      background: linear-gradient(to right,#65aa54, #376e29);
+    background: linear-gradient(to right,#65aa54, #376e29);
   }
 
   #portfolio .item {
@@ -189,7 +187,7 @@
     color: #4C863D;
     font-size: 2rem;
     margin: 0 0 2rem 0;
-  }
+ }
 
   .superHero {
     border: white 0.5rem;
@@ -261,7 +259,7 @@
 
   /* Project Links */
 
-  .project-links {
+  .project-links {  
     display: flex;
     flex-direction: column;
     margin-left: 2.5%;
@@ -285,14 +283,15 @@
     width: 75%;
     font-size: 1.5rem;
   }
+  
   #portfolio .book-auth-section p a:hover {
-     color: #19f819;
+    color: #19f819;
   }
 
   /* Contact Section */
 
-  #contact .item,
-  h2 {
+   #contact .item,
+    h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -401,7 +400,6 @@
     flex-direction: column;
 
   }
-
   footer p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -412,7 +410,7 @@
 
 
 /* Desktop Layout */
-@media all and (min-width: 769px) {
+@media all and (min-width: 800px) {
 
   :root {
     font-size: 16px;
