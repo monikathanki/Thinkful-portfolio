@@ -1,0 +1,756 @@
+/* Mobile-first & Tablet Layout */
+
+@media all and (min-width: 320px) {
+
+  :root {
+    font-size: 14px;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Header Styling */
+
+  header {
+    background: linear-gradient(to right,#65aa54, #376e29);
+    margin-bottom: 3rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-name {
+    color: white;
+    font-family: 'Notable', sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    width: 85%;
+    margin: 0;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    list-style-type: none;
+    margin: 0 1rem 0 0;
+  }
+
+  
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
+
+  header nav ul li a:hover {
+    color: #19f819;
+  }
+
+  a:link {color: white;}
+  a:hover{color:#19f819;}
+
+
+  /* Wrapper */
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Home Section / Intro */
+
+  #home .group .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  h2.intro {
+    font-size: 2rem;
+    font-family: 'Notable',sans-serif;
+    font-weight: 200;
+    background: linear-gradient(to right,#65aa54, #376e29);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+  }
+
+  #home p {
+    font-family: 'Montserrat', sans-serif;
+    color: #4C863D;
+    font-size: 1.5rem;
+    width: 75%;
+    line-height: 3.5rem;
+    margin: 0;
+  }
+
+  #home .group .item img {
+    width: 90%;
+    height: auto;
+    border: #4C863D solid 0.5rem;
+    border-radius: 2rem;
+  }
+
+  
+  
+  
+
+  /* About Me Section */
+
+  h2.about-me {
+    font-size: 2rem;
+    font-family: 'Notable',sans-serif;
+    font-weight: 200;
+    color: white;
+    margin-top: 2rem;
+  }
+
+  #about .wrapper {
+    background: linear-gradient(to right,#65aa54, #376e29);
+  }
+
+  #about p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 75%;
+    line-height: 3.5rem;
+    margin: 0;
+    text-align: left;
+  }
+
+  #about .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+  }
+
+  #about img {
+    width: 90%;
+    height: auto;
+    border: white solid 0.5rem;
+    border-radius: 2rem;
+  }
+
+  /* Portfolio Section */
+
+  #portfolio .wrapper {
+      background: linear-gradient(to right,#65aa54, #376e29);
+  }
+
+  #portfolio .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+  }
+
+  #portfolio h2 {
+    font-size: 2rem;
+    font-family: 'Notable',sans-serif;
+    font-weight: 200;
+    background: linear-gradient(to right,#65aa54, #376e29);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  #portfolio h3 {
+    text-align: center;
+    color: #4C863D;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .superHero {
+    border: white 0.5rem;
+    border-radius: 2rem;
+    align-items: center;
+    width: 75%;
+  }
+
+
+
+  .heroP {
+    color:#4C863D
+  }
+
+  .bookAuth {
+    border:white solid 0.5rem;
+    border-radius: 2rem;
+    align-items: center;
+    width: 75%;
+  }
+
+  .book-auth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    background: linear-gradient(to right,#65aa54, #376e29);
+    color: white;
+    
+  }
+
+  #portfolio .book-auth-section h3 {
+    color: white;
+    margin-top: 2rem;
+  }
+
+  #portfolio p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 75%;
+    line-height: 3.5rem;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+
+  /* Icons */
+
+  .devicon-javascript-plain {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+  }
+
+  .devicon-jquery-plain {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+  }
+
+  .devicon-html5-plain {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+  }
+
+  .devicon-css3-plain {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+  }
+
+  /* Project Links */
+
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+    margin-right: 2.9%;
+  }
+
+  #portfolio p a {
+    color:#4C863D;
+    display: inline-block;
+    width: 75%;
+    font-size: 1.5rem;
+  }
+
+  #portfolio p a:hover {
+    color: #19f819;
+  }
+  
+  #portfolio .book-auth-section p a {
+    color: white;
+    display: inline-block;
+    width: 75%;
+    font-size: 1.5rem;
+  }
+  #portfolio .book-auth-section p a:hover {
+     color: #19f819;
+  }
+
+  /* Contact Section */
+
+  #contact .item,
+  h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+    font-family: 'Notable',sans-serif;
+    font-weight: 200;
+    background: linear-gradient(to right,#65aa54, #376e29);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+  }
+
+  /* Contact Form */
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-name,
+  .user-email,
+  .user-message {
+    color: #4C863D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    
+  }
+
+  #user-name {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 2rem;
+    height: 2rem;
+
+  }
+
+  #user-email {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 2rem;
+    height: 2rem;
+
+  }
+
+  #user-message {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #submit {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 0.5rem;
+    background-color: #4C863D;
+    border: #4C863D 0.5rem solid;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    
+  }
+
+  #submit:hover {
+    color: #19f819;
+  }
+
+  #contact p, 
+  #contact a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #4C863D;
+    width: 75%;
+    line-height: 3.5rem;
+    margin: 1.5rem 0 1rem 0;
+    text-align: center;
+
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  #contact a:hover {
+    color: #19f819;
+  }
+
+  
+
+  /* Footer */
+
+  footer {
+    background: linear-gradient(to right,#65aa54, #376e29);
+    text-align: center;
+    color: white;
+    margin-top: 2.5rem;
+    height: 4rem;
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
+
+}
+
+
+
+/* Desktop Layout */
+@media all and (min-width: 769px) {
+
+  :root {
+    font-size: 16px;
+  }
+
+  /* Header */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 12%;
+  }
+
+  .nav-name {
+    font-size: 2rem;
+    text-decoration: underline;
+
+    display: inline-block;
+    width: 50%;
+    padding: 0 0 0 5%;
+  }
+
+  header nav {
+    width: 100%;
+    padding: 0 5% 0 0;
+  }
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  /* Intro Section */
+
+  #home .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #home .item {
+    width: 50%;
+  }
+
+  #home .group .item img {
+    width: 60%;
+    height: auto;
+    border: #4C863D solid 0.5rem;
+    border-radius: 2rem;
+    margin: 0;
+  }
+
+  
+
+
+  h2.intro {
+    font-size: 2rem;
+    width: 75%;
+    display: inline-block;    
+  }
+
+  #home p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #home p, #home h2 {
+    padding: 0 15% 0 0;
+  }
+
+  /* About Me Section */
+
+  #about h2 {
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    width: 85%;
+  }
+
+  h2.about-me {
+    margin-top: 5rem;
+  }
+
+  #about p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+  }
+
+  #about .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about .item {
+    display: inline-block;
+
+    width: 50%;
+    padding: 0 0 0 7%;
+  }
+
+  #about img {
+    width: 70%;
+    height: auto;
+    margin: 3rem 0 3rem 0;
+  }
+
+  #img {
+      width: 150%;
+      height: 90%;
+      margin-top: 20%;
+  }
+
+  /* Portfolio */
+
+  #portfolio h2 {
+    font-size: 3rem;
+  }
+
+  #portfolio h3 {
+    font-size: 2rem;
+  }
+
+  #portfolio p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+  }  
+
+  .book-auth-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+
+
+  /* Portfolio Images */
+
+  .superHero {
+    border: white solid 0.5rem;
+    border-radius: 2rem;
+    align-items: center;
+    width: 55%;
+  }
+
+  .heroP {
+    color:#4C863D;
+  }
+  
+  .bookAuth {
+    border: white solid 0.5rem;
+    border-radius: 2rem;
+    align-items: center;
+    width: 55%;
+  }
+
+  /* Dev Icons */
+
+  .devicon-javascript-plain {
+    font-size: 5rem;
+  }
+
+  .devicon-jquery-plain {
+    font-size: 5rem;
+    margin-left: 3.5rem;
+  }
+
+  .devicon-html5-plain {
+    font-size: 5rem;
+    margin-left: 3.5rem;
+  }
+
+  .devicon-css3-plain {
+    font-size: 5rem;
+    margin-left: 3.5rem;
+  }
+
+  /* Project Links */
+
+  .project-links {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+  }
+
+  #portfolio p a {
+    color: #4C863D;
+    display: inline-block;
+    width: 95%;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+
+  #portfolio .superHero p a {
+    color: #4C863D;
+    display: inline-block;
+    width: 95%;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+  #portfolio .superHero p a:hover {
+    color: #19f819;
+  }
+
+  #portfolio .book-auth-section p a {
+    color: white;
+    display: inline-block;
+    width: 95%;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  #portfolio .book-auth-section p a:hover {
+    color: #19f819;
+  }
+
+  /* Contact */
+
+  #contact {
+    width: 90%;
+  }
+
+  #contact .group {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  #contact h2 {
+    font-size: 3rem;
+    display: inline-block;
+    width: 85%;
+    background: linear-gradient(to right,#65aa54, #376e29)
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #contact .item, .form-item {
+    display: inline-block;
+    width: 50%;
+  }
+
+  #contact .item p {
+    color: #4C863D;
+    line-height: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0 0 0 2%;
+  }
+
+  #contact .item p a {
+    color: #4C863D;
+    line-height: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 2%;
+  }
+
+  #contact .item p a:hover {
+    color: #19f819;
+  }
+
+
+
+  .user-name,
+  .user-email,
+  .user-message {
+    color: #4C863D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    
+  }
+
+  #user-name {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 2rem;
+    height: 5rem;
+
+  }
+
+  #user-email {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 2rem;
+    height: 5rem;
+
+  }
+
+  #user-message {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  #submit {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 1rem;
+    background-color: #4C863D;
+    border: #4C863D 0.5rem solid;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    
+  }
+
+  /* Footer */
+
+  footer {
+    height: 4rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+  }
+
+}
