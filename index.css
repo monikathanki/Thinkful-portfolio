@@ -1,3 +1,267 @@
+/* initial CSS code */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
+
+body {
+  margin: 0px;
+  font-family: Arial;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.header-image {
+  border: solid #4C863D 3px;
+}
+
+main h2 {
+  font-size: 28px;
+  font-family: 'Notable',sans-serif;
+  font-weight: 200;
+}
+
+main h3 {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+main p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.9em;
+  margin-bottom: 0em;
+}
+
+
+
+main a {
+  font-family: sans-serif;
+  line-height: 1.9em;
+}
+
+a:link { color: white; }
+a:hover { color: #1fc01f; }
+
+/* Main */
+
+main .wrapper h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+main .intro {
+  font-size: 24px;
+  color: #4C863D;
+}
+
+/* Articles and whatnot */ 
+
+#home #portfolio #contact {
+  margin-bottom: 120px;
+}
+
+#portfolio h2{
+  text-align: right;
+}
+
+#home {
+  margin-top: 50px;;
+}
+
+/* The About Article section */ 
+
+#about {
+  background-color: #4C863D;
+  padding: 20px 0 30px 0;
+  margin: 50px 0;
+  color: white;
+}
+
+button {
+  background-color:#4C863D;
+  color: white;
+  border-radius: 20px;
+  border: solid 3px white;
+  background-clip: padding-box;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+}
+
+/* footer */
+footer {
+  background-color: #4C863D;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Contact Form */ 
+
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+#contact a:hover {
+  color: #19f819;
+}
+
+/* Groups and Items (Mobile First) */
+
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Hamburger Menu */
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  border: 1rem solid white;
+  width: 6.6rem;
+  height: 6.6rem;
+  margin-left: 52rem;
+  margin-top: 0;
+}
+
+.menu-btn_burger {
+  width: 3.5rem;
+  height: 0.5rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(9, 77, 32, 0.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: '';
+  position:absolute;
+  width: 3.5rem;
+  height: 0.5rem;
+  background: white;
+  border-radius: 2rem;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-1.33rem)
+}
+
+.menu-btn_burger::after {
+  transform: translateY(1.33rem);
+}
+
+/* Burger menu animation */
+
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-4.167rem);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(2.917rem , -2.917rem);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(2.917rem, 2.917rem);
+}
+
+
+
+/* Header */
+
+header {
+  background-color:#4C863D;
+  margin-bottom: 40px;
+  display: block;
+}
+
+header h1 {
+  color: #4C863D;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Notable', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color:white;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Notable', sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #4cdf27;
+}
+
+
+
+
+
+
+/* mobile media query */
+
 @media screen and (min-width: 480px) {
   
   :root {
@@ -415,6 +679,7 @@
   :root {
     font-size: 16px;
   }
+
 
   /* Header */
 
