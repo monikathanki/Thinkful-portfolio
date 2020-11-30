@@ -570,6 +570,7 @@ header nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   /* Contact Form */
@@ -694,7 +695,6 @@ header nav ul li a:hover {
 
   .nav-name {
     font-size: 2rem;
-    text-decoration: underline;
 
     display: inline-block;
     width: 50%;
