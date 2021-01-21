@@ -29,12 +29,14 @@ main h3 {
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 200;
+  text-align: center;
 }
 
 main p {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.9em;
   margin-bottom: 0em;
+  text-align: center;
 }
 
 
@@ -61,16 +63,18 @@ main .intro {
 
 /* Articles and whatnot */ 
 
-#home #portfolio #contact {
+#home #portfolio  {
   margin-bottom: 120px;
 }
 
+
+
 #portfolio h2{
-  text-align: right;
+  text-align: center;
 }
 
 #home {
-  margin-top: 50px;;
+  margin-top: 50px;
 }
 
 /* The About Article section */ 
@@ -78,7 +82,12 @@ main .intro {
 #about {
   padding: 20px 0 30px 0;
   margin: 50px 0;
+  background: linear-gradient(to right,#65aa54, #376e29);
   color: white;
+  text-align: center;
+}
+ #wrapper {
+  width: 100%;
 }
 
 button {
@@ -88,15 +97,14 @@ button {
   border: solid 3px white;
   background-clip: padding-box;
   margin-top: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
 
 }
 
 /* footer */
 footer {
   background-color: #4C863D;
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin-top: 1%;
   text-align: center;
   color: white;
 }
@@ -105,7 +113,8 @@ footer {
 /* Contact Form */ 
 
 form {
-  padding-right: 8px;
+  padding-right: 10px;
+  margin-left: 20px;
 }
 
 form label {
@@ -119,18 +128,29 @@ form textarea {
 }
 
 form textarea {
-  height: 160px;
+  height: 100px;
 }
 
 #contact a:hover {
   color: #19f819;
 }
 
+#submit {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 1rem;
+  background-color: #4C863D;
+  border: white 0.5rem solid;
+  border-radius: 1.5rem;
+  margin-top: 1rem; 
+}
+
 /* Groups and Items (Mobile First) */
 
-.wrapper {
+ .wrapper {
   width: 100%;
-}
+} 
 
 .group {
   display: flex;
@@ -217,7 +237,7 @@ header {
 }
 
 header h1 {
-  color: #4C863D;
+  color: white;
   text-align: center;
   margin: 0;
   padding: 20px 0;
@@ -235,7 +255,6 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; 
   padding-bottom: 0;
 }
 
@@ -261,7 +280,7 @@ header nav ul li a:hover {
 
 /* mobile media query */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
   
   :root {
     font-size: 14px;
@@ -329,15 +348,14 @@ header nav ul li a:hover {
 
   /* Wrapper */
 
-  .wrapper {
+   .wrapper {
   width: 100%;
-  height: 100%;
-
-  display: flex;
+  height: 100%; 
+   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
+  } 
 
   /* Home Section / Intro */
 
@@ -389,9 +407,9 @@ header nav ul li a:hover {
     margin-top: 2rem;
   }
 
-  #about .wrapper {
+  /* #about .wrapper {
      background: linear-gradient(to right,#65aa54, #376e29);
-   }
+   } */
 
   #about p {
     color: white;
@@ -430,7 +448,6 @@ header nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 2rem;
   }
 
@@ -478,16 +495,24 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-
     background: linear-gradient(to right,#65aa54, #376e29);
-    color: white;
+
     
+  }
+
+  #bookP {
+    color: white;
   }
 
   #portfolio .book-auth-section h3 {
     color: white;
     margin-top: 2rem;
   }
+
+  
+ 
+
+  
 
   #portfolio p {
     font-family: 'Montserrat', sans-serif;
@@ -496,28 +521,36 @@ header nav ul li a:hover {
     line-height: 3.5rem;
     margin: 2rem 0 2rem 0;
     text-align: center;
+  
   }
 
   /* Icons */
+  
+ 
+ 
 
   .devicon-javascript-plain {
     font-size: 3.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .devicon-jquery-plain {
     font-size: 3.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .devicon-html5-plain {
     font-size: 3.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .devicon-css3-plain {
     font-size: 3.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
+  }
+  .devicon-react-original{
+    font-size: 3.5rem;
+    margin-left: 2rem;
   }
 
   /* Project Links */
@@ -553,19 +586,27 @@ header nav ul li a:hover {
 
   /* Contact Section */
 
+  #contact {
+    width: 100%; 
+    background: linear-gradient(to right,#65aa54, #376e29);
+    color: white;
+  }
+
    #contact .item,
     h2 {
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 1%;
   }
 
   #contact h2 {
     font-size: 2rem;
     font-family: 'Notable',sans-serif;
     font-weight: 200;
-    background: linear-gradient(to right,#65aa54, #376e29);
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 2rem;
@@ -583,7 +624,7 @@ header nav ul li a:hover {
   .user-name,
   .user-email,
   .user-message {
-    color: #4C863D;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     
@@ -594,7 +635,8 @@ header nav ul li a:hover {
     flex-direction: column;
     width: 95%;
     margin-bottom: 2rem;
-    height: 2rem;
+    height: 1.9rem;
+    
 
   }
 
@@ -603,7 +645,8 @@ header nav ul li a:hover {
     flex-direction: column;
     width: 95%;
     margin-bottom: 2rem;
-    height: 2rem;
+    height: 1.9rem;
+  
 
   }
 
@@ -613,6 +656,7 @@ header nav ul li a:hover {
     width: 95%;
     height: 4rem;
     margin-bottom: 2rem;
+  
   }
 
   #submit {
@@ -621,7 +665,7 @@ header nav ul li a:hover {
     color: white;
     padding: 0.5rem;
     background-color: #4C863D;
-    border: #4C863D 0.5rem solid;
+    border: white 0.5rem solid;
     border-radius: 2rem;
     margin-top: 1rem;
     
@@ -635,7 +679,7 @@ header nav ul li a:hover {
   #contact a {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #4C863D;
+    color: white;
     width: 75%;
     line-height: 3.5rem;
     margin: 1.5rem 0 1rem 0;
@@ -657,8 +701,7 @@ header nav ul li a:hover {
     background: linear-gradient(to right,#65aa54, #376e29);
     text-align: center;
     color: white;
-    margin-top: 2.5rem;
-    height: 4rem;
+    height: 5rem;
 
     display: flex;
     flex-direction: column;
@@ -858,6 +901,10 @@ header nav ul li a:hover {
     font-size: 5rem;
     margin-left: 3.5rem;
   }
+  .devicon-react-original{
+    font-size: 5rem;
+    margin-left: 3.5rem;
+  }
 
   /* Project Links */
 
@@ -904,7 +951,9 @@ header nav ul li a:hover {
   /* Contact */
 
   #contact {
-    width: 90%;
+    width: 100%; 
+    background: linear-gradient(to right,#65aa54, #376e29);
+    color: white;
   }
 
   #contact .group {
@@ -917,18 +966,19 @@ header nav ul li a:hover {
     font-size: 3rem;
     display: inline-block;
     width: 85%;
-    background: linear-gradient(to right,#65aa54, #376e29)
+    background: white;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
   }
 
   #contact .item, .form-item {
     display: inline-block;
     width: 50%;
+    color: white;
   }
 
   #contact .item p {
-    color: #4C863D;
+    color: white;
     line-height: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -937,7 +987,7 @@ header nav ul li a:hover {
   }
 
   #contact .item p a {
-    color: #4C863D;
+    color: white;
     line-height: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -955,7 +1005,7 @@ header nav ul li a:hover {
   .user-name,
   .user-email,
   .user-message {
-    color: #4C863D;
+    color: #eefdea;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     
@@ -966,7 +1016,7 @@ header nav ul li a:hover {
     flex-direction: column;
     width: 95%;
     margin-bottom: 2rem;
-    height: 5rem;
+    height: 2rem;
 
   }
 
@@ -975,7 +1025,7 @@ header nav ul li a:hover {
     flex-direction: column;
     width: 95%;
     margin-bottom: 2rem;
-    height: 5rem;
+    height: 2rem;
 
   }
 
@@ -983,7 +1033,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     width: 95%;
-    height: 5rem;
+    height: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -993,7 +1043,7 @@ header nav ul li a:hover {
     color: white;
     padding: 1rem;
     background-color: #4C863D;
-    border: #4C863D 0.5rem solid;
+    border: white 0.5rem solid;
     border-radius: 1.5rem;
     margin-top: 1rem;
     
@@ -1003,7 +1053,6 @@ header nav ul li a:hover {
 
   footer {
     height: 4rem;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
