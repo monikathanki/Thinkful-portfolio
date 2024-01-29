@@ -84,7 +84,7 @@ main .intro {
   margin: 50px 0;
   background: linear-gradient(to right,#65aa54, #376e29);
   color: white;
-  text-align: center;
+  text-align: left;
 }
  #wrapper {
   width: 100%;
