@@ -84,7 +84,7 @@ main .intro {
   margin: 50px 0;
   background: linear-gradient(to right,#65aa54, #376e29);
   color: white;
-  text-align: left;
+  text-align: center;
 }
  #wrapper {
   width: 100%;
@@ -194,7 +194,7 @@ form textarea {
 .menu-btn_burger::before,
 .menu-btn_burger::after {
   content: '';
-  position:absolute;
+  position: absolute;
   width: 3.5rem;
   height: 0.5rem;
   background: white;
@@ -263,7 +263,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color:white;
+  color: white;
   text-decoration: none;
   padding: 0 20px 0 0;
   font-family: 'Notable', sans-serif;
@@ -405,6 +405,7 @@ header nav ul li a:hover {
     font-weight: 200;
     color: white;
     margin-top: 2rem;
+    text-align: left;
   }
 
   /* #about .wrapper {
